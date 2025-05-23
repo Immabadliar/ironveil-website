@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Ironveil Anti-Cheat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #0b0b0c;
+            color: #f4f4f4;
+            padding: 2rem;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            animation: slideInTop 1s ease forwards;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #16161a;
+            padding: 2rem 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.03);
+            animation: slideInBottom 1s ease forwards;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            color: #3a8dff;
+            margin-bottom: 0.75rem;
+            font-size: 1.6rem;
+        }
+
+        .section p {
+            color: #c4c4c4;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        a.back-btn,
+        a.forward-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #3a8dff;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        a.back-btn:hover,
+        a.forward-btn:hover {
+            background-color: #256cd1;
+        }
+
+        a.forward-btn {
+            margin-left: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInTop {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInBottom {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Ironveil</h1>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>What is Ironveil?</h2>
+            <p>Ironveil is a modern, cross-platform anti-cheat system engineered to protect competitive games from
+                malicious exploits, cheating tools, and behavioral manipulation. It leverages low-level system
+                monitoring, heuristic detection, and custom integrity checks to provide uncompromising fairness and
+                security.</p>
+        </div>
+
+        <div class="section">
+            <h2>Core Features</h2>
+            <p>Ironveil provides real-time process validation, advanced memory scanning, encrypted logging, and optional
+                kernel-level modules. It supports Windows, macOS, and Linux, enabling game developers to integrate
+                secure, lightweight protection across platforms.</p>
+        </div>
+
+        <div class="section">
+            <h2>Developer-Friendly</h2>
+            <p>Designed with both security and usability in mind, Ironveil features a modular API, seamless integration
+                hooks, and clear logs that empower developers to monitor and enforce anti-cheat policies effectively.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Ethical Detection</h2>
+            <p>Ironveil respects user privacy by avoiding invasive data collection and focuses solely on enforcing fair
+                play. It is lightweight, transparent, and engineered to be tamper-resistant without compromising
+                performance.</p>
+        </div>
+
+        <a href="../index.html" class="back-btn">← Back to Home</a>
+        <a href="../src/pricing.html" class="forward-btn">To Pricing</a>
+    </div>
+</body>
+
+</html>
