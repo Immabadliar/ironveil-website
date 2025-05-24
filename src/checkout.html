@@ -122,7 +122,7 @@
 
     <script src="https://js.stripe.com/v3/"></script>
     <script>
-        const stripe = Stripe('pk_live_51RS3gUIkjDNGujuySuLZkBy3jnAAnWjkt9oroyrr9TotzL9ZHBLeamgpLwJnPKT2OxTeAJTgHHbGjADGdlhH7pSq00LsgbuW5u');
+        const stripe = Stripe(env.PUBLISHABLE_KEY);
         const elements = stripe.elements();
         const cardElement = elements.create('card', {
             style: {
