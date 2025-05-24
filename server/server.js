@@ -6,10 +6,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Replace with your Stripe secret key (live mode)
-const stripe = Stripe('sk_live_...MhDK');
+const stripe = Stripe('Redscted');
 
 // Your Discord webhook URL
-const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1375593005599428648/hsFoT9G101Pt6-CVtNxYnQWuzlh5vm-njWcuRxjCTtP1QBrIXNm3F99sEaRFfjQB8qDt';
+const DISCORD_WEBHOOK = 'Redacted'
 
 app.use(bodyParser.json());
 
